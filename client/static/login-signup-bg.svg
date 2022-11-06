@@ -1,0 +1,11 @@
+<svg width="1280" height="750" viewBox="0 0 1280 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 263L1247.22 598.567V728H20V263Z" fill="#5BF7DB"/>
+<path d="M0 265L1280 615V750H0V265Z" fill="white"/>
+<path d="M264 329L1016 534.67V614H264V329Z" fill="white"/>
+<line opacity="0.06" x1="1035.5" x2="1035.5" y2="750" stroke="black" stroke-dasharray="6 6"/>
+<line opacity="0.06" x1="655.5" x2="655.5" y2="750" stroke="black" stroke-dasharray="6 6"/>
+<line opacity="0.06" x1="275.5" x2="275.5" y2="750" stroke="black" stroke-dasharray="6 6"/>
+<line opacity="0.06" x1="845.5" x2="845.5" y2="750" stroke="black" stroke-dasharray="6 6"/>
+<line opacity="0.06" x1="465.5" x2="465.5" y2="750" stroke="black" stroke-dasharray="6 6"/>
+<line opacity="0.06" x1="85.5" x2="85.5" y2="750" stroke="black" stroke-dasharray="6 6"/>
+</svg>

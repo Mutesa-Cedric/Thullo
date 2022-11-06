@@ -1,6 +1,7 @@
 <template>
     <div class="h-screen text-blue-600 w-full flex items-center justify-center">
         {{ id }}
+        
     </div>
 </template>
 

@@ -1,5 +1,7 @@
 <template>
-  <NavBar />
+  <div>
+    Home page
+  </div>
 </template>
 
 <script lang="ts">
