@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full flex items-center justiyf-center ">
     Home page
   </div>
 </template>
