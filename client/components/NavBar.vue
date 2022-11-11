@@ -5,17 +5,17 @@
 
     <!-- left side -->
     <div class="flex items-center space-x-3">
-      <div class="space-x-8 flex items-center text-heading-1 pr-2 border-r border-r-[#E0E0E0]">
+      <div 
+        class="space-x-8 flex items-center text-heading-1"
+        :class="boardSelected && ' pr-2 border-r border-r-[#E0E0E0]'">
         <!-- logo -->
         <img src="/logo.svg" alt="logo" class="w-24 h-16" />
-
         <!-- board title -->
-        <h1 class="text-heading-1 text-lg font-medium">{{ boardTitle }}</h1>
-
+        <h1 v-if="boardSelected" class="text-heading-1 text-lg font-medium">{{ boardTitle }}</h1>
       </div>
 
       <!-- boards selector -->
-      <div class="flex items-center p-2 border rounded-lg bg-gray-light space-x-2">
+      <div v-if="boardSelected" class="flex items-center p-2 border rounded-lg bg-gray-light space-x-2">
         <div class="grid grid-cols-3 w-4 h-4">
           <div v-for="(_dot, i) in dots" :key="i" class="bg-gray-dark w-1 h-1"></div>
         </div>
@@ -25,22 +25,34 @@
 
     <!-- right side -->
     <div class="flex items-center space-x-8">
-
       <!-- search -->
-      <div class="relative ">
-        <input class="" />
+      <div class="inp-container bg-white p-2 px-3 rounded-lg flex items-center space-x-5">
+        <input 
+          type="text"
+          class="outline-none placeholder:text-[#BDBDBD] placehoder:font-medium py-2 placeholder:text-sm text-sm text-gray-500 px-3 "
+          placeholder="Keyword..." />
+        <button class="button py-2 px-5">Search</button>
       </div>
 
       <!-- profile -->
-      <div>
-
+      <div class="flex items-center space-x-2 ">
+        <img :src="user.profileImage" class="w-10 h-10 rounded-lg" />
+        <p class="text-sm font-semibold">{{ user.name }}</p>
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
+          class="w-4 h-3 ">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+
+import { mapState } from 'vuex';
 import Vue from "vue"
+
 export default Vue.extend({
   name: 'NavBar',
   props: {
@@ -48,22 +60,17 @@ export default Vue.extend({
       type: String,
       default: "Backticks Board"
     },
-    user: {
-      type: Object,
-      default: () => {
-        return {
-          name: "Ingabire Divine",
-          profileImage: ""
-        }
-      }
-    }
   },
   data() {
     return {
       dots: new Array(9).fill(1)
     }
   },
+  computed: {
+    ...mapState(['boardSelected', 'user'])
+  }
 })
+
 </script>
 
 <style scoped>
@@ -71,7 +78,7 @@ export default Vue.extend({
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 }
 
-input{
-
+.inp-container {
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.1));
 }
 </style>

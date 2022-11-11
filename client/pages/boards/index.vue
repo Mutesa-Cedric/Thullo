@@ -2,10 +2,12 @@
     <div
         class="w-full overflow-hidden lg:px-40 md:px-32 sm:px-20 px-10  flex flex-col items-center space-y-8 xl:py-12 lg:py-6 md:py-4 py-2">
         <div class="w-full flex justify-between">
-            <h1 class="text-heading-1 font-medium tracking-[-0.035em] text-lg">All Boards</h1>
-            <button
-                class="bg-primary rounded-md text-white px-3 py-1 font-medium text-sm flex items-center space-x-1">
-                <span>+</span>
+            <h1 class="text-heading-1 font-semibold tracking-[-0.035em] text-lg">All Boards</h1>
+            <button class="button space-x-1 py-1.5 px-3 font-semibold cursor-pointer" @click="openModal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
                 <span>Add</span>
             </button>
         </div>
@@ -15,10 +17,10 @@
             </div>
         </div>
     </div>
-
 </template>
 
 <script>
+
 import jsonData from "../../data.json";
 
 export default {
@@ -28,9 +30,20 @@ export default {
             boards: null
         }
     },
+    head() {
+        return {
+            title: "Thullo - Boards"
+        }
+    },
     created() {
         this.boards = jsonData.boards
-    }
+    },
+    methods: {
+        openModal() {
+            this.$store.commit('setAddBoardModalOpen', true);
+        }
+    },
 
 }
+
 </script>
