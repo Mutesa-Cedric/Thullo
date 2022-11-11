@@ -11,7 +11,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/logo-small.svg' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/logo-small.svg' },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins&display=swap" }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -30,6 +33,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxt/postcss8',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

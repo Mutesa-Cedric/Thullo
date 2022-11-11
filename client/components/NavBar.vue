@@ -15,7 +15,7 @@
       </div>
 
       <!-- boards selector -->
-      <div className="flex items-center p-2 border rounded-lg bg-gray-light space-x-2">
+      <div class="flex items-center p-2 border rounded-lg bg-gray-light space-x-2">
         <div class="grid grid-cols-3 w-4 h-4">
           <div v-for="(_dot, i) in dots" :key="i" class="bg-gray-dark w-1 h-1"></div>
         </div>

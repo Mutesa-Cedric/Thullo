@@ -1,0 +1,112 @@
+{
+    "boards":[
+        {
+            "title":"Dev challenges board",
+            "cover":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJlcGFyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "visibility":"private",
+            "members":[
+                {
+                    "name":"Antony Fu",
+                    "profileImage":"https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Bigwi Von",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Kaylie Jenner",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Hun Bee",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Julian Alvalez",
+                    "profileImage":"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                }
+            ]
+        },
+        {
+            "title":"Dev challenges board",
+            "cover":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJlcGFyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "visibility":"private",
+            "members":[
+                {
+                    "name":"Antony Fu",
+                    "profileImage":"https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Bigwi Von",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Kaylie Jenner",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Hun Bee",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Julian Alvalez",
+                    "profileImage":"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                }
+            ]
+        },
+        {
+            "title":"Dev challenges board",
+            "cover":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJlcGFyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "visibility":"private",
+            "members":[
+                {
+                    "name":"Antony Fu",
+                    "profileImage":"https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Bigwi Von",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Kaylie Jenner",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Hun Bee",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Julian Alvalez",
+                    "profileImage":"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                }
+            ]
+        },
+         {
+            "title":"Dev challenges board",
+            "cover":"https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJlcGFyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "visibility":"private",
+            "members":[
+                {
+                    "name":"Antony Fu",
+                    "profileImage":"https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Bigwi Von",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Kaylie Jenner",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Hun Bee",
+                    "profileImage":"https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                },
+                {
+                    "name":"Julian Alvalez",
+                    "profileImage":"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                }
+            ]
+        }
+    ]
+}
