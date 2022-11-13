@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full overflow-hidden lg:px-40 md:px-32 sm:px-20 px-10  flex flex-col items-center space-y-8 xl:py-12 lg:py-6 md:py-4 py-2">
+        class="w-full overflow-hidden lg:px-40 md:px-32 sm:px-20 px-10  flex flex-col items-center space-y-8 xl:py-12 lg:py-6 md:py-4 py-2 bg-primarybg h-[88vh]">
         <div class="w-full flex justify-between">
             <h1 class="text-heading-1 font-semibold tracking-[-0.035em] text-lg">All Boards</h1>
             <button class="button space-x-1 py-1.5 px-3 font-semibold cursor-pointer" @click="openModal">

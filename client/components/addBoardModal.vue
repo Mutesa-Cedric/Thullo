@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .modal-enter-active {
     @apply ease-out duration-300;
 }
@@ -107,6 +107,6 @@ export default {
 }
 
 .secondary-btn {
-    @apply bg-[#F2F2F2] text-[#828282] py-2 px-5 rounded-lg flex items-center space-x-2 hover:bg-[#E0E0E0];
+    @apply bg-gray-light text-gray-dark py-2 px-5 rounded-lg flex items-center space-x-2 hover:bg-[#E0E0E0];
 }
 </style>

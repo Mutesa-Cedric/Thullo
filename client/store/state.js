@@ -1,5 +1,4 @@
 export default () => ({
-    boardSelected: null,
     selectedBoard: null,
     addBoardModalOpen:null,
     user: {

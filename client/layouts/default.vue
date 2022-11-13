@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <div class="w-full relative  min-h-screen flex flex-col bg-primarybg">
+    <div class="w-full relative  min-h-screen flex flex-col bg-white">
         <AddBoardModal v-show="addBoardModalOpen" />
         <NavBar />
         <Nuxt />

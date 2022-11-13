@@ -1,5 +1,6 @@
 <template>
-    <div 
+    <router-link :to="`/boards/${board.id}`">
+        <div 
         v-if="board"
         class="container bg-white rounded-xl p-6 flex flex-col  space-y-4 border-2 border-transparent hover:border-primary cursor-pointer">
         <img :src="board.cover" class="rounded-xl w-full h-full" :alt="board.title" />
@@ -16,6 +17,8 @@
         </div>
         <p v-else class="text-gray-dark text-sm"> no other members</p>
     </div>
+    </router-link>
+ 
 </template>
 
 <script lang="ts">
