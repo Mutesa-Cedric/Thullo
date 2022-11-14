@@ -1,8 +1,8 @@
 <template>
     <router-link :to="`/boards/${board.id}`">
         <div v-if="board"
-            class="container bg-white rounded-xl p-6 flex flex-col  space-y-4 border-2 border-transparent hover:border-primary cursor-pointer">
-            <img :src="board.cover" class="rounded-xl w-full h-full" :alt="board.title" />
+            class="card-container bg-white rounded-xl p-6 flex flex-col  space-y-4 border-2 border-transparent hover:border-primary cursor-pointer">
+            <img v-show="board.cover" :src="board.cover" class="rounded-xl w-full h-full" :alt="board.title" />
             <h2 class="font-medium text-lg">{{ board.title }}</h2>
             <div v-if="board.members && board.members.length > 0" class="flex items-center w-full space-x-2">
                 <div class="flex space-x-2">
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.card-container {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 }
 </style>
