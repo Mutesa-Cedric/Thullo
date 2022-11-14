@@ -12,7 +12,7 @@
             </button>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
-            <div v-for="(board, i) in boards" v-show="boards" :key="i">
+            <div v-for="board in boards" v-show="boards" :key="board.id">
                 <BoardPreview :board="board" />
             </div>
         </div>

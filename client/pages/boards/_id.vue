@@ -33,7 +33,7 @@
         </div>
 
         <!-- actual content -->
-        <div class="flex overflow-auto bg-primarybg h-full w-full pt-6 px-16 rounded-t-2xl">
+        <div class=" grid grid-columns-auto overflow-auto bg-primarybg h-full w-full pt-6 px-16 rounded-t-2xl">
 
         </div>
     </div>
@@ -49,7 +49,13 @@ export default {
     // eslint-disable-next-line require-await
     async asyncData({ route, app }) {
         const selectedBoard = jsonData.boards.filter(board => board.id === route.params.id)[0];
+        
         app.store.commit('setSelectedBoard', selectedBoard);
+    },
+    data(){
+        return {
+            cardLists:null
+        }
     },
     head() {
         return {
