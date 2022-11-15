@@ -1,6 +1,6 @@
 <template>
     <div v-if="card" class=" card-container bg-white rounded-xl p-6 flex flex-col  space-y-4 border-2">
-        <img v-show="card.cover" :src="card.cover" class="rounded-xl w-full h-full" :alt="card.title" />
+        <img v-show="card.cover" :src="card.cover" class="rounded-xl w-full" :alt="card.title" />
         <h2 class="font-medium text-lg">{{ card.title }}</h2>
         <div class="flex" :class="card.members&&'space-x-2'">
             <div v-if="card.members && card.members.length > 0" class="flex items-center space-x-2">

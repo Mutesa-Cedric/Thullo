@@ -4,5 +4,8 @@ export default {
     },
     setSelectedBoard:(state,payload)=>{
         state.selectedBoard=payload
+    },
+    setUser:(state,payload)=>{
+        state.user=payload
     }
 }

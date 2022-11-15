@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import jsonData from "../data.json";
 export default {
     name: "LoginPage",
     layout: "auth",
@@ -63,12 +64,12 @@ export default {
     methods: {
         login() {
             this.loading = true;
-            console.log(this.email);
-            console.log(this.password)
             setTimeout(() => {
                 this.loading = false
                 this.email = '';
-                this.password = ""
+                this.password = "";
+                this.$store.commit('setUser', jsonData.users[0]);
+                this.$router.push('/boards');
             }, 2000)
         }
     }
