@@ -25,8 +25,8 @@
             </div>
 
             <!-- menu -->
-            <button class="secondary-btn ">
-                <span>...</span>
+            <button class="secondary-btn">
+                <ThreeDots />
                 <span>Show Menu</span>
             </button>
         </div>
@@ -55,11 +55,18 @@
 
 <script>
 import { mapState } from "vuex";
-import jsonData from "../../data.json";
+import jsonData from "../../data";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Visibility } from "@types";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import ThreeDots from '~/components/units/ThreeDots.vue';
 
 export default {
     name: "BoardPage",
-
+    components: [
+        'ThreeDots'
+    ],
     // eslint-disable-next-line require-await
     async asyncData({ route, app }) {
         const selectedBoard = jsonData.boards.filter(board => board.id === route.params.id)[0];
@@ -79,6 +86,9 @@ export default {
     computed: {
         ...mapState(['selectedBoard'])
     },
+    mounted() {
+        console.log(this.selectedBoard);
+    }
 
 }
 </script>
@@ -87,7 +97,7 @@ export default {
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
-    height:8px;
+    height: 8px;
 }
 
 /* Track */

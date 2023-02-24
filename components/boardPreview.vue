@@ -2,7 +2,11 @@
     <router-link :to="`/boards/${board.id}`">
         <div v-if="board"
             class="card-container bg-white rounded-xl p-6 flex flex-col  space-y-4 border-2 border-transparent hover:border-primary cursor-pointer">
-            <img v-show="board.cover" :src="board.cover" class="rounded-xl w-full h-full" :alt="board.title" />
+            <!-- div with a loading linear gradient -->
+            <div v-if="!imgLoaded" class="w-full h-40  bg-gradient-to-r from-gray-200 to-gray-300 animate-pulse rounded-xl">
+            </div>
+            <img v-show="board.cover" ref="imgRef" :src="board.cover" :class="imgLoaded ? 'h-full' : 'h-0'"
+                class="rounded-xl w-full" :alt="board.title" />
             <h2 class="font-medium text-lg">{{ board.title }}</h2>
             <div v-if="board.members && board.members.length > 0" class="flex items-center w-full space-x-2">
                 <div class="flex space-x-2">
@@ -15,7 +19,6 @@
             <p v-else class="text-gray-dark text-sm"> no other members</p>
         </div>
     </router-link>
-
 </template>
 
 <script lang="ts">
@@ -29,6 +32,20 @@ export default {
             }
         }
     },
+    data() {
+        return {
+            imgLoaded: false
+        }
+    },
+    // check if image was loaded
+    mounted() {
+        //   get img ref
+        const imgRef = this.$refs.imgRef as HTMLImageElement
+        //   add event listener
+        imgRef.addEventListener('load', () => {
+            this.imgLoaded = true
+        });
+    }
 }
 </script>
 

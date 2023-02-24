@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import jsonData from "../data.json";
+import jsonData from "../data";
 export default {
     name: "LoginPage",
     layout: "auth",

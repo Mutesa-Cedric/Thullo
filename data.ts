@@ -1,42 +1,52 @@
-{
-    "users": [
+import { Board, List, ListItem, User, Visibility } from "./@types";
+
+interface IData {
+    users: User[];
+    boards: Board[];
+    lists: List[];
+    listItems: ListItem[]
+
+}
+
+const data: IData = {
+    users: [
         {
-            "id":"zmdadeaedfso",
-            "name": "Mason Mount",
-            "profileImage": "https://ehospice.com/wp-content/uploads/2021/03/Photo-06-01-2021-16-20-25-scaled-e1613054543658-770x500-2.jpg"
+            id: "zmdadeaedfso",
+            name: "Mason Mount",
+            profileImage: "https://ehospice.com/wp-content/uploads/2021/03/Photo-06-01-2021-16-20-25-scaled-e1613054543658-770x500-2.jpg"
         },
         {
-            "id": "xmklssaedsd",
-            "name": "Antony Fu",
-            "profileImage": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            id: "xmklssaedsd",
+            name: "Antony Fu",
+            profileImage: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
         },
         {
-            "id": "lveqeodiuaisd",
-            "name": "Bigwi Von",
-            "profileImage": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            id: "lveqeodiuaisd",
+            name: "Bigwi Von",
+            profileImage: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
         },
         {
-            "id": "oqeiweur28327",
-            "name": "Kaylie Jenner",
-            "profileImage": "https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            id: "oqeiweur28327",
+            name: "Kaylie Jenner",
+            profileImage: "https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
         },
         {
-            "id": "939023492mdafdf",
-            "name": "Hun Bee",
-            "profileImage": "https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            id: "939023492mdafdf",
+            name: "Hun Bee",
+            profileImage: "https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
         },
         {
-            "id": "39724dasflks",
-            "name": "Julian Alvalez",
-            "profileImage": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            id: "39724dasflks",
+            name: "Julian Alvalez",
+            profileImage: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
         }
     ],
-    "boards": [
+    boards: [
         {
             "id": "q1dcc",
             "title": "Dev challenges board",
             "cover": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJlcGFyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-            "visibility": "private",
+            "visibility": Visibility.PRIVATE,
             "members": [
                 "oqeiweur28327",
                 "39724dasflks",
@@ -49,7 +59,7 @@
             "id": "q2dsd",
             "title": "Simple project board",
             "cover": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-            "visibility": "private",
+            "visibility": Visibility.PRIVATE,
             "members": [
                 "lveqeodiuaisd",
                 "939023492mdafdf",
@@ -60,7 +70,7 @@
             "id": "q3dfs",
             "title": "Khanban template",
             "cover": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2plY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "visibility": "private",
+            "visibility": Visibility.PRIVATE,
             "members": [
                 "oqeiweur28327",
                 "39724dasflks",
@@ -73,7 +83,7 @@
             "id": "q1dfsd",
             "title": "Habit Building board",
             "cover": "https://images.unsplash.com/photo-1564510714747-69c3bc1fab41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFiaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-            "visibility": "private",
+            "visibility": Visibility.PRIVATE,
             "members": [
                 "39724dasflks",
                 "xmklssaedsd"
@@ -102,11 +112,10 @@
             "title": "Completed 🙌🏽"
         }
     ],
-    "cards": [
+    listItems: [
         {
             "id": "12djss",
             "list_id": "kdfksfds",
-            "cover": null,
             "title": "✋🏿 Add what you'd like to work on below",
             "labels": [
                 {
@@ -200,22 +209,21 @@
             ]
         },
         {
-            "id":"lcclepwpsdpddddd",
-            "list_id":"df2qw331",
-            "cover":null,
-            "title":"finish nuxtjs Twitter clone",
-            "labels":[
+            "id": "lcclepwpsdpddddd",
+            "list_id": "df2qw331",
+            "title": "finish nuxtjs Twitter clone",
+            "labels": [
                 {
-                    "name":"fullstack",
-                    "color":"#F2994A"
+                    "name": "fullstack",
+                    "color": "#F2994A"
                 }
             ]
         },
         {
-            "id":"dfacasxcasdfssccccc",
-            "list_id":"mxdlaewep",
-            "cover":"https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGV2fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            "title":"Build company portfolio",
+            "id": "dfacasxcasdfssccccc",
+            "list_id": "mxdlaewep",
+            "cover": "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGV2fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "title": "Build company portfolio",
             "labels": [
                 {
                     "name": "Technical",
@@ -232,3 +240,5 @@
         }
     ]
 }
+
+export default data;

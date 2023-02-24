@@ -19,13 +19,17 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import jsonData from "../../data";
+import { Board } from '~/@types';
 
-import jsonData from "../../data.json";
+interface IData {
+    boards: Board[] | null
+}
 
 export default {
     name: "BoardsPage",
-    data() {
+    data(): IData {
         return {
             boards: null
         }
@@ -45,5 +49,4 @@ export default {
     },
 
 }
-
 </script>
